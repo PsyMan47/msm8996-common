@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2011 The Android Open Source Project
+<!-- Copyright (C) 2012 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,6 +15,13 @@
 -->
 
 <resources>
-    <!-- Whether to enable channel 50 and 60 settings (India) -->
-    <bool name="show_india_settings">true</bool>
+    <!-- Enable HAL3 by default -->
+    <bool name="config_use_hal3">true</bool>
+
+    <!-- Restart preview for back camera onPictureTaken -->
+    <bool name="back_camera_restart_preview_onPictureTaken">true</bool>
+
+    <!-- Restart preview for front camera onPictureTaken -->
+    <bool name="front_camera_restart_preview_onPictureTaken">true</bool>
 </resources>
+
