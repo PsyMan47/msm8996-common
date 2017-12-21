@@ -117,7 +117,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    ParanoidCamera
 
 # CNE
 PRODUCT_PACKAGES += \
