@@ -23,7 +23,8 @@
 
     <protected-broadcast android:name="org.lineageos.settings.device.CUST_UPDATE" />
 
-    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="android.intent.action.BOOT_COMPLETED" />
+    <uses-permission android:name="android.intent.action.PRE_BOOT_COMPLETED" />
 
     <uses-sdk
         android:minSdkVersion="24" />
@@ -60,7 +61,8 @@
 
         <receiver android:name=".Startup" >
             <intent-filter>
-                <action android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
     </application>
