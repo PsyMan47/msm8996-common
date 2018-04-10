@@ -113,11 +113,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_USES_QCNE := true
 
 # Dex
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
-  endif
-endif
+WITH_DEXPREOPT ?= true
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
 # Display
