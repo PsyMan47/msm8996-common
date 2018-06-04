@@ -104,8 +104,13 @@ void QCamera3CropRegionMapper::update(uint32_t active_array_w,
     }
     mSensorW = sensor_w;
     mSensorH = sensor_h;
+#ifdef CONFIG_MACH_XIAOMI_A4
+    mActiveArrayW = sensor_w;
+    mActiveArrayH = sensor_h;
+#else
     mActiveArrayW = active_array_w;
     mActiveArrayH = active_array_h;
+#endif
 
     LOGH("active_array: %d x %d, sensor size %d x %d",
             mActiveArrayW, mActiveArrayH, mSensorW, mSensorH);
