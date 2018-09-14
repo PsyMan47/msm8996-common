@@ -192,6 +192,7 @@ include device/qcom/sepolicy/sepolicy.mk
 # Treble
 PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_msm8996
